@@ -1,5 +1,8 @@
 # CV-Mediapipe-Hands
 2D手势识别方法
+app1是相机
+app2是数字识别 
+app3是招手
 
 Mediapipe Hands
 https://openaccess.thecvf.com/content_CVPR_2020/papers/Xu_GHUM__GHUML_Generative_3D_Human_Shape_and_Articulated_Pose_CVPR_2020_paper.pdf
