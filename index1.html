@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Camera Shutter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+    <script defer src="app.js"></script>
+    <style>
+        #video {
+            transform: scaleX(-1); /* 镜像翻转 */
+            width: 640px;
+            height: 480px;
+        }
+        #output {
+            font-size: 24px;
+            color: red;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        #snapshot {
+            margin-top: 20px;
+            width: 640px;
+            height: 480px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video" autoplay></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="snapshot" alt="Snapshot will appear here">
+    <div id="output"></div>
+</body>
+</html>
